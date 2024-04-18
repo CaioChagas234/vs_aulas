@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .TemaGreen{
+
+      background-color: green ; 
+      color : black ; 
+      box-shadow : 2px 2px 3px greenyellow;
+      padding: 0.4rem;
+      }
+      .TemaBlue{
+        background-color: blue ; 
+      color : black ; 
+      box-shadow : 2px 2px 3px red;
+      padding: 0.4rem;
+      }
+      .TemaOrange{
+        background-color: orange ; 
+      color : black ; 
+      box-shadow : 2px 2px 3px yellow;
+      padding: 0.4rem;
+      
+      }
+    </style>
+</head>
+<body>
+    
+    <h1 id="titulo" > Hello World! </h1>
+    <buttonid= "btnGreen">Green</button>
+    <buttonid= "btnOrange">Orange</button>
+    <buttonid= "btnBlue">Blue</button>
+  <script>
+
+    let titulo = document.getElementById("titulo");
+    let tema = "Blue";
+    
+    function aplicartemaverdao(){
+      let fundo = document.body;
+     let titulodoverde = document.getElementById("titulo")
+    titulo.textContent = "Tema Verde Inserido"
+    titulo.classlist.remove("TemaBlue");
+    titulo.classList.add("TemaGreen");
+    console.log("Verde é melhor");
+    }
+
+
+ document.getElementById("btnGreen").onclick = aplicartemaverdao;
+ 
+ 
+ </script>
+</body>
+</html>  
